@@ -1,0 +1,98 @@
+{
+    "Environments": [
+        {
+            "EnvironmentName": "ruby-task-manager-env",
+            "EnvironmentId": "e-iweimk2agt",
+            "ApplicationName": "ruby-task-manager",
+            "VersionLabel": "app-2413-241007_224216820900",
+            "SolutionStackName": "64bit Amazon Linux 2 v4.0.3 running Docker",
+            "PlatformArn": "arn:aws:elasticbeanstalk:us-west-2::platform/Docker running on 64bit Amazon Linux 2/4.0.3",
+            "Description": "Environment created from the EB CLI using \"eb create\"",
+            "DateCreated": "2024-10-08T05:42:21.348000+00:00",
+            "DateUpdated": "2024-10-08T05:45:16.766000+00:00",
+            "Status": "Ready",
+            "AbortableOperationInProgress": false,
+            "Health": "Grey",
+            "HealthStatus": "Pending",
+            "Tier": {
+                "Name": "WebServer",
+                "Type": "Standard",
+                "Version": "1.0"
+            },
+            "EnvironmentLinks": [],
+            "EnvironmentArn": "arn:aws:elasticbeanstalk:us-west-2:762233763836:environment/ruby-task-manager/ruby-task-manager-env"
+        },
+        {
+            "EnvironmentName": "ruby-task-manager-env",
+            "EnvironmentId": "e-uajahvk6as",
+            "ApplicationName": "ruby-task-manager",
+            "VersionLabel": "app-2413-241007_221734877571",
+            "SolutionStackName": "64bit Amazon Linux 2 v4.0.3 running Docker",
+            "PlatformArn": "arn:aws:elasticbeanstalk:us-west-2::platform/Docker running on 64bit Amazon Linux 2/4.0.3",
+            "Description": "Environment created from the EB CLI using \"eb create\"",
+            "EndpointURL": "awseb--AWSEB-iwDivPV79YCe-920172354.us-west-2.elb.amazonaws.com",
+            "CNAME": "ruby-task-manager-env.eba-ym33xvuj.us-west-2.elasticbeanstalk.com",
+            "DateCreated": "2024-10-08T05:17:39.965000+00:00",
+            "DateUpdated": "2024-10-08T05:38:39.395000+00:00",
+            "Status": "Terminated",
+            "AbortableOperationInProgress": false,
+            "Health": "Grey",
+            "HealthStatus": "Pending",
+            "Tier": {
+                "Name": "WebServer",
+                "Type": "Standard",
+                "Version": "1.0"
+            },
+            "EnvironmentLinks": [],
+            "EnvironmentArn": "arn:aws:elasticbeanstalk:us-west-2:762233763836:environment/ruby-task-manager/ruby-task-manager-env"
+        },
+        {
+            "EnvironmentName": "ruby-task-manager-env",
+            "EnvironmentId": "e-pcmb3t3zip",
+            "ApplicationName": "ruby-task-manager",
+            "VersionLabel": "app-2413-241007_220553802774",
+            "SolutionStackName": "64bit Amazon Linux 2023 v4.3.7 running Docker",
+            "PlatformArn": "arn:aws:elasticbeanstalk:us-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.3.7",
+            "Description": "Environment created from the EB CLI using \"eb create\"",
+            "EndpointURL": "awseb--AWSEB-OO6ptBDawBQx-1981236119.us-west-2.elb.amazonaws.com",
+            "CNAME": "ruby-task-manager-env.eba-ym33xvuj.us-west-2.elasticbeanstalk.com",
+            "DateCreated": "2024-10-08T05:05:58.568000+00:00",
+            "DateUpdated": "2024-10-08T05:17:00.678000+00:00",
+            "Status": "Terminated",
+            "AbortableOperationInProgress": false,
+            "Health": "Grey",
+            "HealthStatus": "Pending",
+            "Tier": {
+                "Name": "WebServer",
+                "Type": "Standard",
+                "Version": "1.0"
+            },
+            "EnvironmentLinks": [],
+            "EnvironmentArn": "arn:aws:elasticbeanstalk:us-west-2:762233763836:environment/ruby-task-manager/ruby-task-manager-env"
+        },
+        {
+            "EnvironmentName": "ruby-task-manager-env",
+            "EnvironmentId": "e-2uk7ntsc3u",
+            "ApplicationName": "ruby-task-manager",
+            "VersionLabel": "app-2413-241007_215544433830",
+            "SolutionStackName": "64bit Amazon Linux 2023 v4.3.7 running Docker",
+            "PlatformArn": "arn:aws:elasticbeanstalk:us-west-2::platform/Docker running on 64bit Amazon Linux 2023/4.3.7",
+            "Description": "Environment created from the EB CLI using \"eb create\"",
+            "EndpointURL": "awseb--AWSEB-QingXv8XTDuW-1313245599.us-west-2.elb.amazonaws.com",
+            "CNAME": "ruby-task-manager-env.eba-ym33xvuj.us-west-2.elasticbeanstalk.com",
+            "DateCreated": "2024-10-08T04:55:48.869000+00:00",
+            "DateUpdated": "2024-10-08T05:01:47.275000+00:00",
+            "Status": "Terminated",
+            "AbortableOperationInProgress": false,
+            "Health": "Grey",
+            "HealthStatus": "Pending",
+            "Tier": {
+                "Name": "WebServer",
+                "Type": "Standard",
+                "Version": "1.0"
+            },
+            "EnvironmentLinks": [],
+            "EnvironmentArn": "arn:aws:elasticbeanstalk:us-west-2:762233763836:environment/ruby-task-manager/ruby-task-manager-env"
+        }
+    ]
+}

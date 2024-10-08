@@ -4,11 +4,11 @@ class TasksController < ApplicationController
   # GET /tasks or /tasks.json
   def index
     @tasks = Task.all
-  
+
     if params[:priority].present?
       @tasks = @tasks.where(priority: params[:priority])
     end
-  
+
     if params[:completed].present?
       @tasks = @tasks.where(completed: params[:completed])
     end
@@ -74,5 +74,5 @@ class TasksController < ApplicationController
     # Only allow a list of trusted parameters through.
     def task_params
       params.require(:task).permit(:title, :description, :completed, :priority)
-    end    
+    end
 end

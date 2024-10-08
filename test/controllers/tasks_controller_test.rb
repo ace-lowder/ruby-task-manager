@@ -54,7 +54,7 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
   test "should update task" do
     patch task_url(@task), params: { task: { title: "Updated Task", description: @task.description, priority: 1, completed: true } }
     assert_redirected_to task_url(@task)
-    
+
     @task.reload
     assert_equal "Updated Task", @task.title
     assert_equal 1, @task.priority
