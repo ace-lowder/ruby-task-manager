@@ -22,6 +22,8 @@
 
   <p>
     <strong>Completed:</strong>
-    <%= task.completed ? "Yes" : "No" %>
+    <%= form_with model: task, local: true do |form| %>
+      <%= form.check_box :completed, checked: task.completed, onchange: 'this.form.submit()' %>
+    <% end %>
   </p>
 </div>
