@@ -1,29 +1,34 @@
-<div id="<%= dom_id task %>">
-  <p>
-    <strong>Title:</strong>
-    <%= task.title %>
-  </p>
+<div id="<%= dom_id task %>" class="card mb-4">
+  <div class="card-body">
+    <h4 class="card-title"><%= task.title %></h4>
 
-  <p>
-    <strong>Description:</strong>
-    <%= task.description %>
-  </p>
+    <p class="card-text">
+      <strong>Description:</strong> <%= task.description %>
+    </p>
 
-  <p>
-    <strong>Priority:</strong>
-    <% if task.priority == 1 %>
-      Low
-    <% elsif task.priority == 2 %>
-      Medium
-    <% else %>
-      High
-    <% end %>
-  </p>
+    <p class="card-text">
+      <strong>Priority:</strong>
+      <% if task.priority == 1 %>
+        <span class="badge bg-success">Low</span>
+      <% elsif task.priority == 2 %>
+        <span class="badge bg-warning text-dark">Medium</span>
+      <% else %>
+        <span class="badge bg-danger">High</span>
+      <% end %>
+    </p>
 
-  <p>
-    <strong>Completed:</strong>
-    <%= form_with model: task, local: true do |form| %>
-      <%= form.check_box :completed, checked: task.completed, onchange: 'this.form.submit()' %>
-    <% end %>
-  </p>
+    <span class="card-text d-flex align-items-center">
+      <strong class="me-2">Completed:</strong>
+      <%= form_with model: task, local: true, html: { class: "d-inline" } do |form| %>
+        <%= form.check_box :completed, checked: task.completed, onchange: 'this.form.submit()', class: "form-check-input" %>
+      <% end %>
+    </span>
+
+
+
+
+
+
+    <%= link_to "Back to tasks", tasks_path, class: "btn btn-secondary mt-3" %>
+  </div>
 </div>
