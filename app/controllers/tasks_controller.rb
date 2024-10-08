@@ -4,6 +4,14 @@ class TasksController < ApplicationController
   # GET /tasks or /tasks.json
   def index
     @tasks = Task.all
+  
+    if params[:priority].present?
+      @tasks = @tasks.where(priority: params[:priority])
+    end
+  
+    if params[:completed].present?
+      @tasks = @tasks.where(completed: params[:completed])
+    end
   end
 
   # GET /tasks/1 or /tasks/1.json
